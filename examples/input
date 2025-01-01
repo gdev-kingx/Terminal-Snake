@@ -1,0 +1,14 @@
+#!/bin/sh
+
+stty -icanon -echo time 20 min 0
+
+# Game loop
+while true; do
+    echo 'BEGIN'
+    key=$(dd bs=1 count=1 2> /dev/null)
+
+    if [ ! "$key" = '' ]; then
+        echo "You pressed: $key"
+    fi
+    echo 'END'
+done
