@@ -1,6 +1,6 @@
 # Terminal Snake
 
-Hello!
+**Hello!**
 
 This is the classic game of snake.
 
